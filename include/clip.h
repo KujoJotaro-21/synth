@@ -19,9 +19,10 @@ public:
 	void dampen(int start, int duration,float set_zero);
 	void writeclip(std::ofstream& f, int offset = 0);
 	void multiply(float k);
-	clip operator+=(const clip& other) {
-		values.insert(values.end(), other.values.begin(), other.values.end());
-	}
+//	clip operator+=(const clip& other) {
+//		values.insert(values.end(), other.values.begin(), other.values.end());
+//	  return
+//  }
 	void expdistort(int clampstep , int duration/*ms*/, float set_zero);
 	void distort(int cl);
 };

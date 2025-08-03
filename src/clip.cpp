@@ -6,7 +6,7 @@
 #include <iostream>
 
 constexpr float PI = 3.14159265358979323846f;
-constexpr float e = std::numbers::e;
+constexpr float e = std::numbers::e_v<float>;
 
 clip::clip(int duration) {
 	values.resize((duration/1000) * defaults.sample_rate, 0);
