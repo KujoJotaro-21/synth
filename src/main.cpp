@@ -18,7 +18,7 @@ void mknote(std::ofstream& f, int freq, int duration = 1000) {
 }
 
 int main() {
-	std::ofstream file("C:\\Users\\thema\\Desktop\\out\\test.pcm", std::ios::binary);
+	std::ofstream file("./out/out.pcm", std::ios::binary);
 	mknote(file, 261.63, 1000);//4,4 time 60 bpm ie.., 1 beat = quarter note, 1 sec :)
 	mknote(file, 261.63, 1000);//C4
 	mknote(file, 392, 1000);//G4
@@ -27,7 +27,7 @@ int main() {
 	mknote(file, 440, 1000);//A4
 	mknote(file, 440, 1000);//A4
 	mknote(file, 392, 2000);//G4
-	
+
 	mknote(file, 349, 1000);//F4
 	mknote(file, 349, 1000);//F4
 	mknote(file, 329, 1000);//E4
@@ -55,7 +55,7 @@ int main() {
 	mknote(file, 329, 1000);//E4
 	mknote(file, 293, 2000);//D4
 
-	mknote(file, 261.63, 1000);//C4	
+	mknote(file, 261.63, 1000);//C4
 	mknote(file, 261.63, 1000);//C4
 	mknote(file, 392, 1000);//G4
 	mknote(file, 392, 1000);//G4
