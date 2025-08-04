@@ -1,7 +1,7 @@
 # synth
 
-An honest and experimental audio synthesis project written mostly in C++.  
-This project explores programmatic sound generation and basic digital signal processing, with a focus on clarity and hackability over polish.
+An experimental audio synthesis project written mostly in C++.  
+This project explores programmatic sound generation and basic digital signal processing.
 
 ---
 
@@ -60,18 +60,6 @@ Each note is created as a `clip`, with synthesis and damping applied, then writt
 - `buildrun.sh`
   - Compiles all source files and runs the main program.
 
----
-
-## Design Patterns
-
-- **Object-Oriented:**  
-  Audio segments are encapsulated as objects (`clip`), with clear responsibilities for generation and transformation.
-- **Procedural Sequence:**  
-  The main file composes music by sequencing calls to note generation functions.
-- **Mathematical Synthesis:**  
-  Most sound is generated via trigonometric functions (e.g., sine for pure tones).
-
----
 
 ## Building & Running
 
@@ -91,10 +79,6 @@ Output will be in `out/out.pcm`.
 
 ---
 
-## Limitations & Honesty
-
-- The code is rough, with many features incomplete or commented out.
-- There is little error handling and no GUI.
 - Functionality is focused on note and waveform generation, not complete song structures.
 - Changing sample rate, bit depth, or more advanced synthesis features may require manual code edits.
 
